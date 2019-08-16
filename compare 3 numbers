@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int comp(void) 
+{
+  int a,b,c,lar;
+  printf("Enter the 3 numbers : \n");
+  scanf("%d",&a);
+  scanf("%d",&b);
+  scanf("%d",&c);
+  lar=a;
+  if(lar<b)
+    lar=b;
+  if (lar<c)
+    lar=c;
+  else 
+    lar=a;
+  printf("The largest is %d",lar);
+}
+
+int main()
+{
+  comp();
+  return 0;
+}
